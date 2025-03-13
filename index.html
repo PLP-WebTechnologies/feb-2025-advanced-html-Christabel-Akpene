@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5</title>
+  </head>
+  <style>
+    table tr th,
+    table tr td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <section class="ordered_lists">
+      <h2>Names of Fruits</h2>
+      <ol type="i">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Pineapple</li>
+        <li>Grapes</li>
+      </ol>
+    </section>
+
+    <section class="table">
+      <h2>Table</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Ama Boadu</td>
+          <td>Tamale, Ghana</td>
+          <td>+233 567358263</td>
+          <td>ama12@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Kofi Manu</td>
+          <td>Accra, Ghana</td>
+          <td>+233 783638263</td>
+          <td>kofimanu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Ruby Goka</td>
+          <td>Ho, Ghana</td>
+          <td>+233 343638263</td>
+          <td>rgoka@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mununi Alhassan</td>
+          <td>Wa, Ghana</td>
+          <td>+233 348738263</td>
+          <td>muni1234@yahoo.com</td>
+        </tr>
+        <tr>
+          <td>Afia Tando</td>
+          <td>Kumasi, Ghana</td>
+          <td>+233 245838263</td>
+          <td>tando78@gmail.com</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="form">
+      <h2>Form</h2>
+      <form>
+        <legend>Personal Information</legend>
+        <div class="name">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            pattern="[A-Za-z]+"
+            title="input only alphabets"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email: </label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="password">
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            minlength="4"
+            maxlength="8"
+            required
+          />
+        </div>
+        <div class="date">
+          <label for="date">Date: </label>
+          <input type="date" id="date" />
+        </div>
+
+        <br />
+        <legend>School Information</legend>
+        <div class="school">
+          <label for="school">Name of University: </label>
+          <select name="school" id="school">
+            <option value="umat">UMaT</option>
+            <option value="ug">UG</option>
+            <option value="knust">KNUST</option>
+            <option value="uhas">UHAS</option>
+            <option value="uds">UDS</option>
+          </select>
+        </div>
+
+        <div class="level">
+          <label for="level">Level: </label>
+          <input type="radio" name="level" id="level" />100
+          <input type="radio" name="level" id="level" />200
+          <input type="radio" name="level" id="level" />300
+          <input type="radio" name="level" id="level" />400
+          <input type="radio" name="level" id="level" />500
+          <input type="radio" name="level" id="level" />600
+        </div>
+
+        <div class="club">
+          <label for="club">Club: </label>
+          <input type="checkbox" name="club" id="club" />Red Cross
+          <input type="checkbox" name="club" id="club" />Cadet
+          <input type="checkbox" name="club" id="club" />Coding Club
+          <input type="checkbox" name="club" id="club" />Cybersecurity Club
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+
+    <h2>Multimedia Elements</h2>
+    <p>Healthy Breakfast</p>
+    <img src="multimedia/pexels-pancake.jpg" alt="A picture of pancake" width="200px" height="200px">
+
+    <p>Listen to this music</p>
+    <audio controls>
+        <source src="multimedia/short-audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>Watch this short video</p>
+    <video controls width="400px" height="400px">
+        <source src="multimedia/short-video.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>
